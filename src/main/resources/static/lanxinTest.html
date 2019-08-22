@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- saved from url=(0107)http://129.211.30.157:9000/css-lanxin/lanxinTest.html?code=9462d1e1-18df-4364-855c-69ce7f8c70e7&state=STATE -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>lanxinTest</title>
+<script src="./lanxinTest_files/jquery-3.1.1.min.js.download"></script>
+    <script src="./lanxinTest_files/lanxin-jssdk.js.download"></script>
+    <script src="./lanxinTest_files/lanxinTest.js.download"></script>
+    <script type="text/javascript">
+    if(document.documentElement.clientWidth <= 500){
+        //设置rem 1rem 大约= 10px
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 37.5 + 'px';
+
+    }
+
+</script><style>
+    .out-div {
+        display: flex;
+        align-items: center;
+        flex-direction: column
+    }
+
+    .out-div .row-div {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 20%;
+    }
+
+    .out-div .row-div .col_div {
+        width: 45%;
+        text-align: right;
+    }
+
+    .out-div .margin-div {
+        margin-top: 10px
+    }
+</style></head>
+
+
+
+
+
+<body>
+
+<div class="out-div">
+    <div class="row-div">
+        <div class="col_div">我当前的地址：</div><span id="label1"></span>
+    </div>
+    <!--<div class="row-div margin-div">
+        <div class="col_div">我的名字：</div><span id="label2"></span>
+    </div>-->
+    <div class="margin-div">
+        <button name="选择联系人" onclick="chooseContacts()">选择联系人</button>
+    </div>
+    <div class="margin-div">
+        <button name="打开地图" onclick="openLocation()">打开地图</button>
+    </div>
+    <div class="margin-div">
+        <button name="关闭窗口" onclick="closeWindow()">关闭窗口</button>
+    </div>
+</div>
+
+</body></html>
