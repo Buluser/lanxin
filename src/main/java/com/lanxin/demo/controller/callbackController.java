@@ -76,7 +76,7 @@ public class callbackController {
         map.put("name",obj.getJSONObject("data").getString("name"));
         map.put("orgname",obj.getJSONObject("data").getString("orgname"));
         map.put("phoneNum",obj.getJSONObject("data").getJSONObject("mobilePhone").getString("number"));
-        //map.put("departmentname",obj.getJSONObject("data").getJSONObject("department").getString("name"));
+
         return new ModelAndView(new MappingJackson2JsonView(), map);
     }
 
